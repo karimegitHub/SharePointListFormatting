@@ -9,7 +9,7 @@
     "border-radius": "5px",
     "margin": "5px 0px",
     "padding": "0px",
-    "visibility": "=if([$ContentType] == 'Folder', 'visible', 'hidden')"
+    "visibility": "=if([$ContentType] == 'Folder', if([$Customer_x003a_Email] == '', 'hidden', 'visible'), 'hidden')"
   },
   "attributes": {
     "class": "ms-bgColor-themePrimary"
