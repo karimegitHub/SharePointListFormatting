@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "button",
+  "customRowAction": {
+    "action": "executeFlow",
+    "actionParams": "{\"id\":\"175cbd64-93ea-4b38-80ad-925f8fea943b\"}"
+  },
+  "attributes": {
+    "class": "='ms-fontColor-' +if([$Customer_x003a_Email]=='','orangeLight','teal')"
+  },
+  "style": {
+    "border": "none",
+    "background-color": "transparent",
+    "cursor": "pointer",
+    "display": "=if([$Customer_x003a_Email]=='','none','inherit')"
+  },
+  "children": [
+    {
+      "elmType": "span",
+      "attributes": {
+        "iconName": "=if([$Customer_x003a_Email]=='','HeartBroken','Lightbulb')"
+      },
+      "style": {
+        "padding-right": "6px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "=if([$Customer_x003a_Email]=='','Disabled!', 'Run Flow!')"
+
+
+      
+    }
+  ]
+}
