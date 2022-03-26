@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "button",
+  "customRowAction": {
+    "action": "executeFlow",
+    "actionParams": "{\"id\":\"175cbd64-93ea-4b38-80ad-925f8fea943b\"}"
+  },
+  "style": {
+    "border-radius": "5px",
+    "margin": "5px 0px",
+    "padding": "0px",
+    "visibility": "=if([$ContentType] == 'Folder', 'visible', 'hidden')"
+  },
+  "attributes": {
+    "class": "ms-bgColor-themePrimary"
+  },
+  "children": [
+    {
+      "elmType": "a",
+      "txtContent": "Send Files",
+      "style": {
+        "text-decoration": "none",
+        "padding": "10px 0px",
+        "width": "100%"
+      },
+      "attributes": {
+        "class": "ms-fontColor-white"
+      }
+    }
+  ]
+}
